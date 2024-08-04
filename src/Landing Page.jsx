@@ -1,6 +1,5 @@
 import {useEffect, useState} from "react";
 import './LandingPage.css'
-import img1 from './assets/img.png'
 import img2 from './assets/img_1.png'
 
 const [themeColor, setThemeColor] = useState('purple');
@@ -479,17 +478,17 @@ function Invoice() {
         amount: "",
     });
 
-    const handleItemChange = (event) => {
-        const id = event.target.id;
-        const value = event.target.value;
-        let data = {...invoiceData, [id]: value};
-        data["amount"] = data["price"] * data["quantity"];
-        setItem(data);
-    }
+    // const handleItemChange = (event) => {
+    //     const id = event.target.id;
+    //     const value = event.target.value;
+    //     let data = {...invoiceData, [id]: value};
+    //     data["amount"] = data["price"] * data["quantity"];
+    //     setItem(data);
+    // }
 
-    const addItem = () => {
-        setItemList([...itemList, item]);
-    }
+    // const addItem = () => {
+    //     setItemList([...itemList, item]);
+    // }
 
     const handleChange = (event) => {
         const id = event.target.id;
@@ -543,18 +542,18 @@ function Invoice() {
                 <span className={"outer"}>
                     <span className={"inner"}>
                         <h3>Name</h3>
-                        <input type="text" id={"name"} onChange={handleItemChange} />
+                        <input type="text" id={"name"}  />
 
                         <h3>Quantity</h3>
-                        <input type="text" id={"name"} onChange={handleItemChange} />
+                        <input type="text" id={"name"}  />
                     </span>
 
                     <span className={"inner"}>
                         <h3>Price</h3>
-                        <input type="text" id={"name"} onChange={handleItemChange} />
+                        <input type="text" id={"name"}  />
 
                         <h3>Discount</h3>
-                        <input type="text" id={"name"} onChange={handleItemChange} />
+                        <input type="text" id={"name"} />
                     </span>
                 </span>
 
