@@ -1,8 +1,8 @@
 import {useEffect, useState} from "react";
 import './LandingPage.css'
+import img1 from './assets/img.png'
 import img2 from './assets/img_1.png'
 
-const [themeColor, setThemeColor] = useState('purple');
 
 
 function LandingPage({changePage}) {
@@ -471,13 +471,13 @@ function Invoice() {
         ]
     });
 
-    const [item, setItem] = useState({
-        name: "",
-        quantity: "",
-        price: "",
-        amount: "",
-    });
-
+    // const [item, setItem] = useState({
+    //     name: "",
+    //     quantity: "",
+    //     price: "",
+    //     amount: "",
+    // });
+    //
     // const handleItemChange = (event) => {
     //     const id = event.target.id;
     //     const value = event.target.value;
@@ -485,7 +485,7 @@ function Invoice() {
     //     data["amount"] = data["price"] * data["quantity"];
     //     setItem(data);
     // }
-
+    //
     // const addItem = () => {
     //     setItemList([...itemList, item]);
     // }
@@ -542,18 +542,18 @@ function Invoice() {
                 <span className={"outer"}>
                     <span className={"inner"}>
                         <h3>Name</h3>
-                        <input type="text" id={"name"}  />
+                        <input type="text" id={"name"} />
 
                         <h3>Quantity</h3>
-                        <input type="text" id={"name"}  />
+                        <input type="text" id={"name"} />
                     </span>
 
                     <span className={"inner"}>
                         <h3>Price</h3>
-                        <input type="text" id={"name"}  />
+                        <input type="text" id={"name"}/>
 
                         <h3>Discount</h3>
-                        <input type="text" id={"name"} />
+                        <input type="text" id={"name"}/>
                     </span>
                 </span>
 
