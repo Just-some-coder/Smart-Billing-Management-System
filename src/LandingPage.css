@@ -129,6 +129,11 @@ input:hover{
     color: #7bff64;
     cursor: pointer;
 }
+.nav-dashboard ul li a:hover{
+    color: #7bff64;
+    cursor: pointer;
+}
+
 
 .stock-title{
     position: fixed;
@@ -328,6 +333,11 @@ input:hover{
     height: 60px;
     transition: 0.3s ease-in;
     border:1px solid white;
+}
+
+a:visited{
+    text-decoration: none;
+    color: white;
 }
 
 .green{
